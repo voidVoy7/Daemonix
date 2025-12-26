@@ -7,5 +7,9 @@ set(SOURCE_FILES src/main.cpp
         src/headers/logi.h
         src/hostname.cpp
         src/headers/isroot.h
-        src/isroot.cpp)
+        src/isroot.cpp
+        src/os.cpp
+        src/headers/os.h
+        src/headers/readfile.h
+        src/readfile.cpp)
 add_executable(Daemonix ${SOURCE_FILES})
