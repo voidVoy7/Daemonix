@@ -1,9 +1,16 @@
 #include "headers/hostname.h"
+#include "headers/isroot.h"
 #include <iostream>
 #include <fstream>
 #include <string>
 
 void changeHostname() {
+
+    if (!isRoot()) {
+        std::cerr << "Error: you must run this program as root (e.g., using sudo)" << std::endl;
+        exit(1);
+    }
+
     std::ofstream file("/etc/hostname", std::ofstream::out | std::ofstream::trunc);
 
     if (!file) {

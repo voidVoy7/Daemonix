@@ -1,19 +1,14 @@
 #include "headers/hostname.h"
 #include <iostream>
-#include <unistd.h>
 #include <fstream>
 #include <string>
-
-bool isRoot() {
-    return geteuid() == 0;
-}
 
 int main() {
 
     int action = 0;
 
     std::cout << "Choose an action" << std::endl;
-    std::cout << "1. hostname change" << std::endl;
+    std::cout << "1. hostname change ( run it as root )" << std::endl;
     std::cout << "2. N/A" << std::endl;
     std::cout << "3. N/A" << std::endl;
     std::cout << "4. Exit Daemonix" << std::endl;
