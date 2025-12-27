@@ -14,7 +14,6 @@ int main() {
     std::cout << "Choice: ";
     std::cin >> action;
 
-
     switch (action) {
         case 1:
             changeHostname();
