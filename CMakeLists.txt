@@ -8,4 +8,4 @@ set(SOURCE_FILES src/main.cpp
         src/hostname.cpp
         src/headers/isroot.h
         src/isroot.cpp)
-add_executable(Daemonix ${SOURCE_FILES})
+add_executable(dmnx ${SOURCE_FILES})

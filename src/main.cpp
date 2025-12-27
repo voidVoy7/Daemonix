@@ -1,7 +1,5 @@
 #include "headers/hostname.h"
 #include <iostream>
-#include <fstream>
-#include <string>
 
 int main() {
 
@@ -15,7 +13,6 @@ int main() {
 
     std::cout << "Choice: ";
     std::cin >> action;
-
 
     switch (action) {
         case 1:
